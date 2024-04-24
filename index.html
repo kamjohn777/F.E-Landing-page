@@ -25,20 +25,29 @@
         </header>
         <div class="content">
             <div class="textBox">
-                <h2>They're not just sneakers<br>they're <span>Creativity</span> </h2>
+                <h2>They're not just sneakers<br>they're <span" class="color-span">Creativity</span> </h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae beatae odit, corrupti sunt quod tenetur totam deleniti? Nesciunt animi fugiat labore.</p>
-                <a href="#">Learn More</a>
+                <a class="a-color" href="#">Learn More</a>
             </div>
                 <div class="imgBox">
                     <!-- <img id="purple-image" src="./assets/model-wearing-purple-sneakers-women-s-apparel-removebg-preview (1).png" alt="" class="sneakers"> -->
-                    <img src="./assets/fc7e7f8c-5b12-4879-8c59-8f4a8220240a-removebg-preview.png" alt="">
+                    <img src="./assets/New-purple-image-removebg-preview.png" alt="" class="sneakers">
                 </div>
         </div>
+        <!-- <ul class="thumb">
+            <li><img src="./assets/thumb1.png" alt="" onclick="imgSlider('./assets/77a6392d-3f70-4419-882b-e1c96bf997d0-removebg-preview.png'); changeCircleColor('')"></li>
+            <li><img src="./assets/thumb2.png" alt="" onclick="imgSlider('./assets/696334e4-db0a-4d8a-a847-27b776fd096f-removebg-preview.png'); changeCircleColor('#427eb6')"></li>
+            <li><img src="./assets/thumb3.png" alt="" onclick="imgSlider('./assets/e60a8af2-d2be-419a-86e2-bb6088f40698-removebg-preview.png'); changeCircleColor('#eb0e37')"></li>
+            <li><img src="./assets/thumb4.png" alt="" onclick="imgSlider('./assets/fc7e7f8c-5b12-4879-8c59-8f4a8220240a-removebg-preview.png'); changeCircleColor('#f7d200')"></li>
+        </ul> -->
+
+        <!-- #671f75 -->
         <ul class="thumb">
-            <li><img src="./assets/thumb1.png" alt=""></li>
-            <li><img src="./assets/thumb2.png" alt=""></li>
-            <li><img src="./assets/thumb3.png" alt=""></li>
-            <li><img src="./assets/thumb4.png" alt=""></li>
+            <!-- <li><img id="main-img" src="./assets/New-purple-image-removebg-preview.png" alt="" onclick="imgSlider('./assets/New-purple-image-removebg-preview.png'); txtBoxColorChange(changeCircleColor('#524189'))"></li> -->
+            <li><img id="main-img" src="./assets/New-purple-image-removebg-preview.png" alt="" onclick="imgSlider('./assets/New-purple-image-removebg-preview.png'); txtBoxColorChange(changeCircleColor('#54366a'))"></li>
+            <li><img src="./assets/thumb2.png" alt="" onclick="imgSlider('./assets/696334e4-db0a-4d8a-a847-27b776fd096f-removebg-preview.png'); txtBoxColorChange(changeCircleColor('#427eb6'))"></li>
+            <li><img src="./assets/thumb3.png" alt="" onclick="imgSlider('./assets/e60a8af2-d2be-419a-86e2-bb6088f40698-removebg-preview.png'); txtBoxColorChange(changeCircleColor('#eb0e37'))"></li>
+            <li><img src="./assets/thumb4.png" alt="" onclick="imgSlider('./assets/fc7e7f8c-5b12-4879-8c59-8f4a8220240a-removebg-preview.png'); txtBoxColorChange(changeCircleColor('#f7d200'))"></li>
         </ul>
         <ul class="sci">
             <li><a href="#"><i class="fab fa-facebook"></i></a></li>
@@ -46,5 +55,38 @@
             <li><a href="#"><i class="fab fa-instagram"></i></a></li>
         </ul>  
     </section>
+
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+    <script type="text/javascript">
+        function imgSlider(imageRef) {
+            document.querySelector('.sneakers').src = imageRef;
+        }
+
+        function changeCircleColor(color) {
+            const clipCircle = document.querySelector('.circle');
+             clipCircle.style.background = color;
+             return color
+        }
+
+        function txtBoxColorChange(newColor) {
+            const span = document.querySelector('.color-span');
+            const h2 = document.querySelector('.a-color')
+            span.style.color = newColor;
+            h2.style.background = newColor;
+            // changeCircleColor(newColor);
+        }
+        // let circleColor = changeCircleColor();
+        // txtBoxColorChange(circleColor);
+
+        // console.log(txtBoxColorChange());
+        // console.log(changeCircleColor());
+    //   $(dosument).ready(function() {
+    //     $
+    //   });
+
+
+    </script>
 </body>
 </html

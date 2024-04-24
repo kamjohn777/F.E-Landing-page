@@ -88,6 +88,8 @@ header ul li a {
     text-decoration: none;
    }
    .content .imgBox {
+position: relative;
+
     width: 600px;
     display: flex;
     justify-content: flex-end;
@@ -95,11 +97,18 @@ header ul li a {
     margin-top: 50px;
    }
    .content .imgBox img {
+
+    position: absolute; /* If needed */
+    /* top: 0;  */
+    top: -265px;
+    left: 0; /* Adjust as needed */
     /* max-width: 340px; */
     /* max-width: 400px; */
     max-width: 600px;
-    width: 550px;
+    /* width: 550px; */
+    width: 480px;
    }
+
 .thumb {
     position: absolute;
     /* letter-spacing: 50%; */
@@ -138,6 +147,11 @@ list-style: none;
     display: inline-block;
     margin: 5px 0;
     transform: scale(0.6);
+    filter: invert(1);
+}
+.sci li a i {
+    font-size: 50px;
+    color: #000
 }
 .circle {
     position: absolute;
@@ -145,13 +159,25 @@ list-style: none;
     left: 0;
     width: 100%;
     height: 100%;
-    background: #671f75;
+    background: #54366a;
+    /* background: #671f75; */
+    /* background: #524189; */
     clip-path: circle(600px at right 800px);
+    transition: 0.3s ease-in;
 }
 /* Clip-path is a CSS property that allows you to specify a clipping region to hide portions of an element */
 
+.color-span {
+    /* color: #671f75; */
+    color: #54366a;
 
+}
 
+#main-img {
+    rotate: 34deg;
+    margin-top: 10px;
+    margin-left: 0px;
+}
 
    #purple-image {
     rotate: 180deg;
